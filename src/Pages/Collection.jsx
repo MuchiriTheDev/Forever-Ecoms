@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import { assets } from '../assets/assets';
 import Title from '../Components/Title';
-import ProductItem from '../Components/productItem';
+import ProductItem from '../Components/ProductItem';
 
 const Collection = () => {
   const [showFilter , setShowFilter  ]=  useState(false);
