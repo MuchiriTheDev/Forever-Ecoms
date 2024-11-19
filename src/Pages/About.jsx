@@ -11,17 +11,17 @@ const About = () => {
         <Title text1={'about'} text2={'us'}/>
       </div>
       <div className="my-10 flex flex-col md:flex-row gap-16">
-        <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="" />
+        <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="About Irenbern General Suppliers" />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ratione illum magnam fugiat excepturi molestias autem quidem aperiam blanditiis ipsum non aspernatur perspiciatis dicta nesciunt cupiditate, esse consequuntur omnis nam.
+            Irenbern General Suppliers is a leading supplier of electronics and stationery across Kenya. Our company is dedicated to providing high-quality products that meet the diverse needs of businesses, educational institutions, and individual customers. We offer a wide range of electronic devices, office equipment, and stationery supplies to help you stay connected, organized, and productive.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae aliquid dignissimos recusandae eligendi. Error, reiciendis, id quo harum voluptate labore, quae a corrupti cum nobis eos atque laboriosam doloribus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut reprehenderit non in corrupti officiis sequi nesciunt perspiciatis. Possimus tempore quis a aliquid consequatur asperiores voluptas obcaecati, exercitationem, rem incidunt sapiente.
+            Established with a vision to provide reliable, affordable, and top-notch supplies, Irenbern has earned a reputation for excellence in customer service and product quality. We have built strong relationships with both local and international suppliers, ensuring that we can deliver the best products to our customers.
           </p>
           <b>Our Mission</b>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eligendi atque possimus mollitia at quis officia autem. Magni ipsam necessitatibus, illum, nesciunt quam tenetur, totam omnis quis corrupti quo praesentium?
+            Our mission is to provide Kenyans with easy access to high-quality electronics and stationery at competitive prices. We aim to be a trusted partner for businesses, schools, and individuals by offering products that enhance productivity and enrich daily life. We are committed to customer satisfaction and building long-lasting relationships with our clients.
           </p>
         </div>
       </div>
@@ -34,19 +34,19 @@ const About = () => {
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
           <b className='capitalize'>Quality Assurance :</b>
           <p className='text-gray-600'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit mollitia dolorem ipsum deleniti distinctio?
+            We guarantee top-quality products sourced from trusted suppliers, ensuring reliability, performance, and durability. Our electronics and stationery meet high standards, providing excellent value for our customers.
           </p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b className='capitalize'>convenience :</b>
+          <b className='capitalize'>Convenience :</b>
           <p className='text-gray-600'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit mollitia dolorem ipsum deleniti distinctio?
+            Irenbern makes shopping easy with fast, reliable delivery services across Kenya. We provide hassle-free online ordering and ensure that your products reach you promptly and safely, no matter your location.
           </p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
           <b className='capitalize'>Exceptional Customer Service :</b>
           <p className='text-gray-600'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit mollitia dolorem ipsum deleniti distinctio?
+            Our dedicated support team ensures you have the best experience. Whether you need product advice or assistance with an order, we provide prompt, helpful service to meet your needs.
           </p>
         </div>
       </div>

@@ -25,7 +25,11 @@ const Product = () => {
   }, [productId, products]);
 
   if (!proData) {
-    return <div className='opacity-0'></div>; // Placeholder for when data is loading
+    return (
+    <div className='opacity-0'>
+      <h1>Loading...</h1>
+    </div>
+    ); // Placeholder for when data is loading
   }
 
   return (
@@ -71,7 +75,7 @@ const Product = () => {
               {proData.sizes.map((itm, i) => <button onClick={() => setSelected(itm)} className={`border py-2 px-4 bg-gray-100 ${itm === selected ? "border-orange-500" : ""}`} key={i}>{itm}</button>)}
             </div>
           </div>
-          <button onClick={() => addToCart(proData._id , selected)} className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700 uppercase ">Add to cart</button>
+          <button onClick={() => addToCart(proData._id , selected)} className="bg-celticBlue text-white px-8 py-3 text-sm active:bg-gray-700 uppercase ">Add to cart</button>
           <hr className='mt-8 sm:w-4/5'/>
           <div className="text-sm text-gray-500 mt-5 flex flex-col gap-1 ">
             <p>100% Original Product</p>
@@ -90,10 +94,10 @@ const Product = () => {
         </div>
         <div className="flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, minus? Velit, maiores repudiandae inventore tempora libero autem vero harum animi ducimus aut dolor repellendus dolores rerum maxime. Obcaecati, veritatis quos.
+           {proData.description}
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestias, ut eos iure velit officiis, accusantium eum aspernatur, ab error fuga dolorem incidunt adipisci tempora minima odio culpa autem omnis?
+           {proData.description}
           </p>
         </div>
       </div>

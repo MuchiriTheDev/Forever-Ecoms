@@ -5,62 +5,62 @@ import Title from '../Components/Title';
 import ProductItem from '../Components/ProductItem';
 
 const Collection = () => {
-  const [showFilter , setShowFilter  ]=  useState(false);
-  const [filterProducts , setFilterProducts] = useState([]);
-  const { products, search , showSearch } = useContext(ShopContext);
-  const [ category, setCategory ] = useState([])
-  const [ subcategory , setSubcategory] = useState([])
-  const [sortType , setSortType] =useState('relevant');
+  const [showFilter, setShowFilter] = useState(false);
+  const [filterProducts, setFilterProducts] = useState([]);
+  const { products, search, showSearch } = useContext(ShopContext);
+  const [category, setCategory] = useState([]);
+  const [subcategory, setSubcategory] = useState([]);
+  const [sortType, setSortType] = useState('relevant');
   
   const toggleCategories = (e) => {
-    if (category.includes(e.target.value)){
-      setCategory(prev =>  prev.filter(item => item !== e.target.value))
+    if (category.includes(e.target.value)) {
+      setCategory(prev => prev.filter(item => item !== e.target.value))
     } else {
       setCategory(prev => [...prev, e.target.value])
     }
   }
+
   const subsToggle = (e) => {
-    if (subcategory.includes(e.target.value)){
-      setSubcategory(prev =>  prev.filter(item => item !== e.target.value))
+    if (subcategory.includes(e.target.value)) {
+      setSubcategory(prev => prev.filter(item => item !== e.target.value))
     } else {
       setSubcategory(prev => [...prev, e.target.value])
     }
   }
 
-  const applyFilter  = () =>{
+  const applyFilter = () => {
     let productsCopy = products.slice();
 
-    if (showSearch && search ){
+    if (showSearch && search) {
       productsCopy = productsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()))
     }
-    if(category.length > 0){
+    if (category.length > 0) {
       productsCopy = productsCopy.filter(item => category.includes(item.category))
-    } 
-    
-    if(subcategory.length > 0){
+    }
+
+    if (subcategory.length > 0) {
       productsCopy = productsCopy.filter(item => subcategory.includes(item.subCategory))
     }
     setFilterProducts(productsCopy)
   }
-  
 
-  useEffect(() =>{
+  useEffect(() => {
     applyFilter()
-  },[ category ,subcategory, search , showSearch])
+  }, [category, subcategory, search, showSearch])
 
   useEffect(() => {
     sortProduct()
   }, [sortType]);
-  
+
   const sortProduct = () => {
     let fpCopy = filterProducts.slice()
 
-    switch(sortType){
+    switch (sortType) {
       case "low-high":
-        setFilterProducts(fpCopy.sort((a,b) => a.price - b.price))
+        setFilterProducts(fpCopy.sort((a, b) => a.price - b.price))
         break;
       case "high-low":
-        setFilterProducts(fpCopy.sort((a,b) => b.price - a.price))
+        setFilterProducts(fpCopy.sort((a, b) => b.price - a.price))
         break;
       default:
         applyFilter();
@@ -70,46 +70,48 @@ const Collection = () => {
 
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t '>
-      {/*  Filter section */}
+      {/* Filter section */}
       <div className="min-w-60">
-        <p onClick={ ()=> setShowFilter(!showFilter)} className="my-2 text-xl flex items-center cursor-pointer gap-2">FILTERS
+        <p onClick={ () => setShowFilter(!showFilter)} className="my-2 text-xl flex items-center cursor-pointer gap-2">FILTERS
           <img src={assets.dropdown_icon} alt="" className={`h-3 sm:hidden ${showFilter ? "rotate-90": null}`} />
         </p>
         {/* Category filter */}
-        <div className={`border border-gray-300 pl-5 py-3 mt-6  ${showFilter ? '' : "hidden"} sm:block`}>
+        <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : "hidden"} sm:block`}>
           <p className="mb-3 text-sm font-medium">CATEGORIES</p>
-           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
+          <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
             <p className="flex gap-2">
-              <input type="checkbox" className='w-3' onChange={toggleCategories} value={'Men'} /> Men
+              <input type="checkbox" className='w-3' onChange={toggleCategories} value={'Electronics'} /> Electronics
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className='w-3' onChange={toggleCategories} value={'Women'} />Women
+              <input type="checkbox" className='w-3' onChange={toggleCategories} value={'Wearables'} /> Wearables
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className='w-3' onChange={toggleCategories} value={'Kids'} /> Children
+              <input type="checkbox" className='w-3' onChange={toggleCategories} value={'Accessories'} /> Accessories
             </p>
-           </div>
+          </div>
         </div>
         {/* Sub-category section */}
         <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? '' : "hidden"} sm:block`}>
           <p className="mb-3 text-sm font-medium">TYPE</p>
-           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
+          <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
             <p className="flex gap-2">
-              <input type="checkbox" className='w-3' onChange={subsToggle} value={'Topwear'} />Top wear
+              <input type="checkbox" className='w-3' onChange={subsToggle} value={'Headphones'} /> Headphones
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className='w-3' onChange={subsToggle} value={'Bottomwear'} />Bottom Wear
+              <input type="checkbox" className='w-3' onChange={subsToggle} value={'Tablets'} /> Tablets
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className='w-3' onChange={subsToggle} value={'Winterwear'} />Winter Wear
+              <input type="checkbox" className='w-3' onChange={subsToggle} value={'Speakers'} /> Speakers
             </p>
-           </div>
+            <p className="flex gap-2">
+              <input type="checkbox" className='w-3' onChange={subsToggle} value={'Chargers'} /> Chargers
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Right Side */}
       <div className="flex-1">
-
         <div className="flex justify-between text-base sm:text-2xl mb-4 ">
           <Title text1={`ALL`} text2={`COLLECTION`}/>
           {/* Product Sort */}
@@ -122,7 +124,7 @@ const Collection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
           {
-            filterProducts.map((item , i) =>{
+            filterProducts.map((item, i) => {
               return <ProductItem key={i} name={item.name} id={item._id} img={item.image} price={item.price}/>
             })
           }
