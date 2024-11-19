@@ -38,7 +38,7 @@ const Product = () => {
 
         {/* Product images */}
         <div className="flex-1 flex flex-col-reverse sm:flex-row gap-3">
-          <div className="flex sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.75%] w-full">
+          <div className="flex sm:flex-col overflow-x-auto sm:overflow-y-scroll gap-3 sm:justify-normal sm:w-[18.75%] w-full">
             {proData.image?.map((img, i) => (
               <img
                 onClick={() => setImgMain(img)}
