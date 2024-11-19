@@ -6,8 +6,8 @@ const Footer = () => {
     <div className=''>
         <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm ">
             <div className="">
-                <img src={assets.logo} className='mb-5 w-32' alt="Irebern General Suppliers logo" />
-                <p className='w-full md:w-3/4 text-gray-600'>
+                <img src={assets.logo} className='mb-5 w-full h-fit md:w-32' alt="Irebern General Suppliers logo" />
+                <p className='w-full md:w-3/4  text-gray-600'>
                     Irebern General Suppliers provides high-quality electronics and stationery supplies in Nairobi. We are a trusted supplier known for fast delivery and affordable prices.
                 </p>
             </div>
