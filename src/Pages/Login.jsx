@@ -18,7 +18,7 @@ const Login = () => {
         <p className='cursor-pointer'>Forgot Your Password</p>
         <p onClick={() => setCurr(false)} className='cursor-pointer'>Login Here</p>
       </div>
-      <button type='submit' className='bg-black text-white font-light px-8 py-2 mt-4'>Sign Up</button>
+      <button type='submit' className='bg-celticBlue text-white font-light px-8 py-2 mt-4'>Sign Up</button>
     </form>
   ):(
   <form onSubmit={onSubmitHandler} className='flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4  text-gray-800'>
@@ -32,7 +32,7 @@ const Login = () => {
       <p className='cursor-pointer'>Forgot Your Password</p>
       <p onClick={() => setCurr(true)} className='cursor-pointer'>Create An Account</p>
     </div>
-    <button type='submit' className='bg-black text-white font-light px-8 py-2 mt-4'>Sign In</button>
+    <button type='submit' className='bg-celticBlue text-white font-light px-8 py-2 mt-4'>Sign In</button>
   </form>
   )
 }
