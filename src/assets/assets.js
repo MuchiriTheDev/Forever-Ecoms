@@ -39,6 +39,29 @@ import selotape from './selotape.jpeg'
 import tri_color_cartridge_1 from './tri_color_cartridge_1.jpeg'
 import tri_color_cartridge_2 from './tri_color_cartridge_2.jpeg'
 import pixma from './pixma.jpeg'
+import chair_1 from './clair_1.jpeg'
+import sit_1 from './sit_1.jpeg'
+import sit_2 from './sit_2.jpeg'
+import sit_3 from './sit_3.jpeg'
+import white_chair from './white_chair.jpeg'
+import desktop_1 from './desktop_1.jpeg'
+import desktop_2 from './desktop_2.jpeg'
+import desktop_3 from './desktop_3.jpeg'
+import monitor_1 from './monitor_1.jpeg'
+import monitor_2 from './monitor_2.jpeg'
+import mouse_1 from './mouse_1.jpeg'
+import mouse_2 from './mouse_2.jpeg'
+import mouse_3 from './mouse_3.jpeg'
+import HP_1 from './HP_1.jpeg'
+import HP_2 from './HP_2.jpeg'
+import HP_3 from './HP_3.jpeg'
+import pc_1 from './pc_1.jpeg'
+import pc_2 from './pc_2.jpeg'
+import pc_3 from './pc_3.jpeg'
+import pc_4 from './pc_4.jpeg'
+import pc_5 from './pc_5.jpeg'
+import probook from './probook.jpeg'
+
 
 
 import logo from './logo.png'
@@ -312,116 +335,117 @@ export const products = [
         date: 1716622345448,
         bestseller: true
     },
-]
-    // {
-    //     _id: "aaaat",
-    //     name: "Shredder – Paper",
-    //     description: "A compact paper shredder that safely destroys documents, ideal for home or office use.",
-    //     price: 50,
-    //     image: [p_img20],
-    //     category: "Stationery",
-    //     subCategory: "Office Supplies",
-    //     sizes: ["Standard"],
-    //     date: 1716622345448,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "aaaau",
-    //     name: "Desk Chair – Ergonomic",
-    //     description: "An ergonomic desk chair designed for comfort and support, ideal for long working hours.",
-    //     price: 100,
-    //     image: [p_img21],
-    //     category: "Stationery",
-    //     subCategory: "Office Furniture",
-    //     sizes: ["Standard"],
-    //     date: 1716622345448,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "aaaav",
-    //     name: "Wall Clock – Modern Design",
-    //     description: "A stylish wall clock with a modern design, perfect for adding elegance to your office or home.",
-    //     price: 20,
-    //     image: [p_img22],
-    //     category: "Stationery",
-    //     subCategory: "Office Décor",
-    //     sizes: ["Standard"],
-    //     date: 1716622345448,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "aaaaw",
-    //     name: "Smart Watch",
-    //     description: "A feature-packed smartwatch that tracks your fitness, heart rate, and notifications directly on your wrist.",
-    //     price: 150,
-    //     image: [p_img23],
-    //     category: "Electronics",
-    //     subCategory: "Wearables",
-    //     sizes: ["Standard"],
-    //     date: 1716622345448,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "aaaax",
-    //     name: "Compact Digital Camera",
-    //     description: "A high-resolution digital camera, perfect for capturing photos and videos on the go.",
-    //     price: 350,
-    //     image: [p_img24],
-    //     category: "Electronics",
-    //     subCategory: "Cameras",
-    //     sizes: ["Standard"],
-    //     date: 1716622345448,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "aaaay",
-    //     name: "Smartphone – 128GB",
-    //     description: "A sleek smartphone with 128GB storage, perfect for all your apps, photos, and videos.",
-    //     price: 500,
-    //     image: [p_img25],
-    //     category: "Electronics",
-    //     subCategory: "Mobile Phones",
-    //     sizes: ["128GB"],
-    //     date: 1716622345448,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "aaaaz",
-    //     name: "Desk Lamp – Touch Control",
-    //     description: "A sleek desk lamp with touch control and adjustable brightness, ideal for late-night work or reading.",
-    //     price: 35,
-    //     image: [p_img26],
-    //     category: "Electronics",
-    //     subCategory: "Lighting",
-    //     sizes: ["Standard"],
-    //     date: 1716622345448,
-    //     bestseller: true
-    // },
 
-    // {
-    //     _id: "aaaaf",
-    //     name: "Kids Bluetooth Headphones",
-    //     description: "Wireless Bluetooth headphones designed for kids, featuring adjustable headbands, volume-limiting technology, and vibrant colors.",
-    //     price: 140,
-    //     image: [p_img6],
-    //     category: "Electronics",
-    //     subCategory: "Headphones",
-    //     sizes: ["One Size"],
-    //     date: 1716623423448,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "aaaag",
-    //     name: "Men Smartwatch with Fitness Tracker",
-    //     description: "A sleek, stylish smartwatch with fitness tracking features, heart rate monitoring, and smartphone notifications.",
-    //     price: 190,
-    //     image: [p_img7],
-    //     category: "Electronics",
-    //     subCategory: "Wearables",
-    //     sizes: ["One Size"],
-    //     date: 1716621542448,
-    //     bestseller: false
-    // },
+    {
+        _id: "aaaat",
+        name: "Spatial chair",
+        description: "A compact paper shredder that safely destroys documents, ideal for home or office use.",
+        price: 4000,
+        image: [white_chair],
+        category: "Stationery",
+        subCategory: "Office Supplies",
+        sizes: ["Standard"],
+        date: 1716622345448,
+        bestseller: true
+    },
+    {
+        _id: "aaaau",
+        name: "Office sits",
+        description: "An ergonomic desk chair designed for comfort and support, ideal for long working hours.",
+        price: 3000,
+        image: [sit_1, sit_2, sit_3],
+        category: "Stationery",
+        subCategory: "Office Furniture",
+        sizes: ["Standard"],
+        date: 1716622345448,
+        bestseller: true
+    },
+    {
+        _id: "aaaav",
+        name: "Hp white laptop",
+        description: "A stylish wall clock with a modern design, perfect for adding elegance to your office or home.",
+        price: 20,
+        image: [HP_1, HP_2, HP_3],
+        category: "Stationery",
+        subCategory: "Office Décor",
+        sizes: ["Standard"],
+        date: 1716622345448,
+        bestseller: true
+    },
+    {
+        _id: "aaaaw",
+        name: "32 inch monitor",
+        description: "A feature-packed smartwatch that tracks your fitness, heart rate, and notifications directly on your wrist.",
+        price: 15000,
+        image: [monitor_1, monitor_2],
+        category: "Electronics",
+        subCategory: "Wearables",
+        sizes: ["Standard"],
+        date: 1716622345448,
+        bestseller: true
+    },
+    {
+        _id: "aaaax",
+        name: "LED laptop mouse",
+        description: "A high-resolution digital camera, perfect for capturing photos and videos on the go.",
+        price: 350,
+        image: [mouse_1, mouse_2, mouse_3],
+        category: "Electronics",
+        subCategory: "Cameras",
+        sizes: ["Standard"],
+        date: 1716622345448,
+        bestseller: true
+    },
+    {
+        _id: "aaaay",
+        name: "Beautifull PC",
+        description: "A sleek smartphone with 128GB storage, perfect for all your apps, photos, and videos.",
+        price: 500,
+        image: [pc_1, pc_2, pc_3, pc_4 , pc_5],
+        category: "Electronics",
+        subCategory: "Mobile Phones",
+        sizes: ["128GB"],
+        date: 1716622345448,
+        bestseller: true
+    },
+    {
+        _id: "aaaaz",
+        name: "HP Probook 430 Latptop",
+        description: "A sleek desk lamp with touch control and adjustable brightness, ideal for late-night work or reading.",
+        price: 25000,
+        image: [probook],
+        category: "Electronics",
+        subCategory: "Lighting",
+        sizes: ["Standard"],
+        date: 1716622345448,
+        bestseller: true
+    },
+
+    {
+        _id: "aaaaf",
+        name: "Gaming chair",
+        description: "Wireless Bluetooth headphones designed for kids, featuring adjustable headbands, volume-limiting technology, and vibrant colors.",
+        price: 14000,
+        image: [chair_1],
+        category: "Electronics",
+        subCategory: "Headphones",
+        sizes: ["One Size"],
+        date: 1716623423448,
+        bestseller: true
+    },
+    {
+        _id: "aaaag",
+        name: "All In One Desktop",
+        description: "A sleek, stylish smartwatch with fitness tracking features, heart rate monitoring, and smartphone notifications.",
+        price: 12000,
+        image: [desktop_1, desktop_2, desktop_3],
+        category: "Electronics",
+        subCategory: "Wearables",
+        sizes: ["One Size"],
+        date: 1716621542448,
+        bestseller: false
+    },
+]
     // {
     //     _id: "aaaah",
     //     name: "Men Bluetooth Wireless Earbuds",
@@ -608,7 +632,7 @@ export const products = [
 //         name: "Boy Round Neck Pure Cotton T-shirt",
 //         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
 //         price: 180,
-//         image: [p_img23],
+//         image: [monitor_1, monitor_2],
 //         category: "Kids",
 //         subCategory: "Topwear",
 //         sizes: ["S", "M", "L", "XL"],

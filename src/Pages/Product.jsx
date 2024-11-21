@@ -56,7 +56,7 @@ const Product = () => {
 
         {/* Product info */}
         <div className="flex-1">
-          <h1 className='font-medium text-2xl mt-2'>{proData.name}</h1>
+          <h1 className='font-medium text-2xl capitalize mt-2'>{proData.name}</h1>
           <div className="flex items-center gap-1 mt-2">
             {/* Assuming the stars rating feature */}
             {Array.from({ length: 4 }, (_, i) => (
